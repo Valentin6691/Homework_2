@@ -23,14 +23,26 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-a = 999
-b = 999
-c = int(input())
-d = int(input())
+# a = 999
+# b = 999
+# c = int(input())
+# d = int(input())
 
-for i in range(a):
-    for j in range(b):
-        if i + j == c and i * j == d:
-            a = i
-            b = j
-print(a, b)            
+# for i in range(a):
+#     for j in range(b):
+#         if i + j == c and i * j == d:
+#             a = i
+#             b = j
+# print(a, b)
+
+# Задача 3: Требуется вывести все целые степени двойки (т.е. числа
+# вида 2k
+# ), не превосходящие числа N.
+# 10 -> 1 2 4 8
+
+n = int(input())
+i = 0
+
+while 2 ** i < n:
+    print(2 ** i)
+    i +=1
